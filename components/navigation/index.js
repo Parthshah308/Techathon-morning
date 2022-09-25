@@ -1,4 +1,4 @@
-import React, {  useContext } from 'react'
+import React, { useContext } from 'react'
 import { useRouter } from 'next/router'
 
 import NavItem from './nav-item'
@@ -9,16 +9,20 @@ import { AuthContext } from '../../store/auth'
 
 const Navigation = () => {
   const router = useRouter()
-  const { isAuthenticated ,isAdmin} = useContext(AuthContext);
+  const { isAuthenticated, isAdmin } = useContext(AuthContext)
   return (
     <nav className={styles.nav}>
-      {isAuthenticated() && isAdmin() ? ( <NavItem
-        href="/Dashboard"
-        selected={router.pathname.split('/')[1] == 'Dashboard'}
-      >
-        <span>Dashboard</span>
-      </NavItem>) : (<span></span>)}
-     
+      {isAuthenticated() && isAdmin() ? (
+        <NavItem
+          href="/Dashboard"
+          selected={router.pathname.split('/')[1] == 'Dashboard'}
+        >
+          <span>Dashboard</span>
+        </NavItem>
+      ) : (
+        <span></span>
+      )}
+
       <NavItem
         href="/"
         selected={
@@ -28,12 +32,16 @@ const Navigation = () => {
         <World />
         <span>TakeCode</span>
       </NavItem>
-      {isAuthenticated() && isAdmin() ? (<NavItem
-        href="/Question"
-        selected={router.pathname.split('/')[1] == 'Question'}
-      >
-        <span>Questions</span>
-      </NavItem>):<></>}
+      {isAuthenticated() && isAdmin() ? (
+        <NavItem
+          href="/Question"
+          selected={router.pathname.split('/')[1] == 'Question'}
+        >
+          <span>Questions</span>
+        </NavItem>
+      ) : (
+        <></>
+      )}
       <NavItem href="/tags" selected={router.pathname == '/tags'}>
         <span>Tags</span>
       </NavItem>

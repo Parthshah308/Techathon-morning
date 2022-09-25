@@ -30,7 +30,7 @@ const QuestionSummary = ({
             <Tag key={tag}>{tag}</Tag>
           ))}
         </div>
-       { !isAuthenticated() && !isAdmin() ? <div className={styles.userDetails}>
+        <div className={styles.userDetails}>
           <Link href="/users/[user]" as={`/users/${author.username}`}>
             <a>
               <img
@@ -49,7 +49,7 @@ const QuestionSummary = ({
             <Link href="/users/[user]" as={`/users/${author.username}`}>
               <a>{author.username}</a>
             </Link>
-          </div></div> : (<div></div>)}
+          </div></div> 
         </div>
        
     </div>

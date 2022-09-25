@@ -10,7 +10,7 @@ const PostItem = ({ vote, title, created, id }) => {
     <div className={styles.container}>
       <div className={styles.vote}>{vote}</div>
       <Link href="/questions/[slug]" as={`/questions/${id}-${slug(title)}`}>
-        <a className={styles.title}>{title}</a>
+        <a className={styles.title}>{ }</a>
       </Link>
       <div className={styles.created}>
         {formatDistanceToNowStrict(new Date(created), {

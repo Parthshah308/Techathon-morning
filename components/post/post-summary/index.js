@@ -20,7 +20,7 @@ const PostSummary = ({
   setQuestion,
   children
 }) => {
-  const { authState, isAdmin } = useContext(AuthContext)
+  const { authState,isAuthenticated, isAdmin } = useContext(AuthContext)
   const { authAxios } = useContext(FetchContext)
   const router = useRouter()
 
@@ -105,12 +105,22 @@ const PostSummary = ({
             </div>
           </div>
         </div>
-        {(authState.userInfo?.id === author.id && isAdmin()) && (<>
+        {(isAuthenticated() && isAdmin()) && (<>
           <div className={styles.row}>
             <Button clButtonssName={styles.delete} onClick={() => handleApprove()}>
               Approve
             </Button>
           </div>
+          <div className={styles.row}>
+            <Button clButtonssName={styles.delete} onClick={() => handleReject()}>
+              Reject
+            </Button>
+          </div>
+           
+        </>
+        )}
+         {(authState.userInfo?.id === author.id) && (<>
+         
           <div className={styles.row}>
           <Button className={styles.delete} onClick={() => handleDeleteComment()}>
             Delete

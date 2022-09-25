@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect,useContext } from 'react'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
@@ -55,8 +55,7 @@ const HomePage = () => {
     <Layout>
       <Head>
         <title>
-          {router.query.tag ? router.query.tag : 'Questions'} - Clone of
-          Stackoverflow
+          {router.query.tag ? router.query.tag : 'Questions'} - TakeCode
         </title>
       </Head>
 

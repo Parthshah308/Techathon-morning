@@ -1,11 +1,10 @@
 module.exports = {
-  title: 'Stackoverflow',
+  title: 'TakeCode',
   description: 'Where Developers Learn & Share',
-  siteUrl: 'https://clone-of-stackoverflow.vercel.app',
-  googleAnalytic: 'UA-149699646-1',
+  siteUrl: 'https://techathon-morning.vercel.app/',
   author: {
-    email: 'salihozdemir94@gmail.com',
-    name: 'Salih Özdemir'
+    email: 'shahparth3082003@gmail.com',
+    name: 'Parth Shah'
   },
   lang: 'en'
 }

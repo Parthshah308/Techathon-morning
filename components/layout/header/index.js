@@ -45,28 +45,33 @@ const Header = ({ className, ...props }) => {
         </div>
         <Button className={styles.logo} href="/">
           <Logo />
-          <p >
+          <p>
             <span>TakeCode</span>
           </p>
         </Button>
         <div style={{ flex: 1 }}></div>
 
         {isAuthenticated() ? (
-          <>         
-          <div className={styles.userInfo}>
-            <p>
-              Welcome{' '}
-              <Link
-                href="/users/[user]"
-                as={`/users/${authState.userInfo.username}`}
-              >
-                <Button> <p><span>{authState.userInfo.username}!</span></p> </Button>
-              </Link>
-              
-            </p>
-            
-          </div>
-           <Button className={styles.logout} onClick={() => logout()}>log out</Button>
+          <>
+            <div className={styles.userInfo}>
+              <p>
+                Welcome{' '}
+                <Link
+                  href="/users/[user]"
+                  as={`/users/${authState.userInfo.username}`}
+                >
+                  <Button>
+                    {' '}
+                    <p>
+                      <span>{authState.userInfo.username}!</span>
+                    </p>{' '}
+                  </Button>
+                </Link>
+              </p>
+            </div>
+            <Button className={styles.logout} onClick={() => logout()}>
+              log out
+            </Button>
           </>
         ) : (
           <>

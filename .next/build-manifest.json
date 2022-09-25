@@ -28,7 +28,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/tags": [
+    "/users/[username]": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

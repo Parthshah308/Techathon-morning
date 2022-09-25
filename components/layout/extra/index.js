@@ -11,7 +11,7 @@ const Extra = ({ marginTop = 24 }) => {
   const { tagState } = useContext(TagContext)
 
   const { isAuthenticated ,isAdmin} = useContext(AuthContext);
-  return (<>  {!isAuthenticated() && !isAdmin() ? <div className={styles.container}>
+  return ( <div className={styles.container}>
       <div
         className={styles.tagContainer}
         style={{ marginTop: `${marginTop}px` }}
@@ -30,8 +30,7 @@ const Extra = ({ marginTop = 24 }) => {
           ))}
         </div>
       </div>
-    </div> : (<></>)}
-  </>)
+    </div>)
 }
 
 export default Extra

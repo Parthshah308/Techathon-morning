@@ -28,15 +28,14 @@ const Dashboard = () => {
 
     const fetchQuestionByTag = async () => {
       const { data } = await publicFetch.get(`/tags/`)
-      setTags(data.length);
-
+      setTags(data.length)
     }
 
     if (router.query.tag) {
     } else {
       fetchQuestionByTag()
       fetchQuestion()
-      fetchUser();
+      fetchUser()
     }
   }, [router.query.tag])
 
@@ -87,9 +86,7 @@ const Dashboard = () => {
                   <div class="col-8">
                     <h2 class="d-flex align-items-center mb-0">{user}</h2>
                   </div>
-                   
                 </div>
-                
               </div>
             </div>
           </div>
@@ -106,13 +103,10 @@ const Dashboard = () => {
                   <div class="col-8">
                     <h2 class="d-flex align-items-center mb-0">{questions}</h2>
                   </div>
-                  
-                  </div>
                 </div>
-                
               </div>
             </div>
-          
+          </div>
         </div>
         <div class="row">
           <div class="col-xl-6 col-lg-6">
@@ -128,9 +122,7 @@ const Dashboard = () => {
                   <div class="col-8">
                     <h2 class="d-flex align-items-center mb-0">{tags}</h2>
                   </div>
-                  
                 </div>
-               
               </div>
             </div>
           </div>

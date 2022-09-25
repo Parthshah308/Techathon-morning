@@ -60,11 +60,10 @@ let dummy=[];
     <Layout>
       <Head>
         <title>
-          {router.query.tag ? router.query.tag : 'Questions'} - Clone of
-          Stackoverflow
+          {router.query.tag ? router.query.tag : 'Questions'} - TakeCode
         </title>
       </Head>
-
+      <PageTitle title={router.query.tag ? `Questions tagged [${router.query.tag}]` : 'Requested Questions'} button borderBottom={false} />
       
       <ButtonGroup
         borderBottom

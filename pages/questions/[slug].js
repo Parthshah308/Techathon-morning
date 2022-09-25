@@ -92,7 +92,7 @@ const QuestionDetail = ({ questionId, title }) => {
                 ))}
               </CommentList>
             </PostWrapper>
-              
+
             {question.answers.length > 0 && (
               <AnswerContainer
                 answersCount={question.answers.length}

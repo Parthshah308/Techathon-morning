@@ -72,7 +72,7 @@ const QuestionForm = () => {
               hasError={touched.title && errors.title}
               errorMessage={errors.title && errors.title}
               placeholder="e.g Is there an R function for finding the index of an element in a vendor?"
-            /> 
+            />
             <Textarea
               label="Body"
               inputInfo="Include all the information someone would need to answer your question"
