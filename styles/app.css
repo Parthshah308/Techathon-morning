@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+html {
+  font-size: 13px;
+}
+
+body {
+  font-family: 'Lexend', sans-serif;
+  font-size: 1rem;
+  line-height: 1.3;
+  background-color: var(--white);
+  color: var(--black-800);
+}
+
+a {
+  color: var(--blue-600);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--fade);
+
+  &:hover {
+    color: var(--blue-500);
+  }
+}
+
+.react-tagsinput {
+  border: 1px solid var(--black-200);
+  border-radius: 3px;
+}
+
+.react-tagsinput-tag {
+  display: inline-block;
+  background-color: var(--powder-100);
+  color: var(--powder-700);
+  font-size: 12px;
+  padding: 5px 6px;
+  border: 1px solid transparent;
+  margin: 2px 5px 2px 0;
+  line-height: 1;
+  white-space: nowrap;
+  border-radius: 3px;
+}
+
+.react-tagsinput-input {
+  width: 200px;
+  color: var(--black-900);
+  &::placeholder {
+    color: var(--black-200);
+  }
+}
+
+.loading {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    color: var(--black-200);
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black-050);
+
+  .card {
+    padding: 50px;
+    border-radius: 7px;
+    background-color: var(--white);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.09), 0 3px 8px rgba(0, 0, 0, 0.09),
+      0 4px 13px rgba(0, 0, 0, 0.13);
+  }
+}
+
+.not-found {
+  color: var(--red-500);
+  margin-left: 24px;
+}
+
+.not-found-questions {
+  margin-top: 10px;
+  text-align: center;
+} 
+
+
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  position: relative;
+  margin-bottom: 30px;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,0.1), 0 0.9375rem 1.40625rem rgba(90,97,105,0.1), 0 0.25rem 0.53125rem rgba(90,97,105,0.12), 0 0.125rem 0.1875rem rgba(90,97,105,0.1);
+}
+.l-bg-cherry {
+  background: linear-gradient(to right, #493240, #f09) !important;
+  color: #fff;
+}
+
+.l-bg-blue-dark {
+  background: linear-gradient(to right, #373b44, #4286f4) !important;
+  color: #fff;
+}
+
+.l-bg-green-dark {
+  background: linear-gradient(to right, #0a504a, #38ef7d) !important;
+  color: #fff;
+}
+
+.l-bg-orange-dark {
+  background: linear-gradient(to right, #a86008, #ffba56) !important;
+  color: #fff;
+}
+
+.card .card-statistic-3 .card-icon-large .fas, .card .card-statistic-3 .card-icon-large .far, .card .card-statistic-3 .card-icon-large .fab, .card .card-statistic-3 .card-icon-large .fal {
+  font-size: 110px;
+}
+
+.card .card-statistic-3 .card-icon {
+  text-align: center;
+  line-height: 50px;
+  margin-left: 15px;
+  color: #000;
+  position: absolute;
+  right: -5px;
+  top: 20px;
+  opacity: 0.1;
+}
+
+.l-bg-cyan {
+  background: linear-gradient(135deg, #289cf5, #84c0ec) !important;
+  color: #fff;
+}
+
+.l-bg-green {
+  background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%) !important;
+  color: #fff;
+}
+
+.l-bg-orange {
+  background: linear-gradient(to right, #f9900e, #ffba56) !important;
+  color: #fff;
+}
+
+.l-bg-cyan {
+  background: linear-gradient(135deg, #289cf5, #84c0ec) !important;
+  color: #fff;
+}
